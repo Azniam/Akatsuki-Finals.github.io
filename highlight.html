@@ -1,0 +1,446 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Akatsuki</title>
+    <style>
+        header{
+            background: url(img/b8.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 1000px;
+        }
+        .nav {
+            position: fixed;
+            z-index: 100;
+        }
+        .dropdown-content li a {
+            color: white;
+        }
+        .sidenav {
+            background-image: url(img/m1.jpg);
+            z-index: 1000;
+        }
+        .sidenav li a {
+            color: white;
+        }
+        .photography p {
+            text-align: justify;
+        }
+        .row p {
+            font-size: 18px;
+        }
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+        .tabs .indicator{
+            background-color: red;
+        }
+        .tabs .tab a:focus, .tabs .tab a:focus.active{
+            background: transparent;
+        }
+        @media screen and (max-width: 670px){
+            header {
+                min-height: 500px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+
+    <header>
+        <div class="navbar-fixed">
+            <nav class="nav-wrapper red">
+                <div class="container">
+                    <a href="https://naruto.fandom.com/wiki/Akatsuki" target="_blank" class="brand-logo">Akatsuki.Org</a>
+                    <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="index.html" class="dropdown-trigger" data-target="dropdown1">Home</a></li>
+                            <ul id="dropdown1" class="dropdown-content red">
+                                <li><a href="#member's">Member's</a></li>
+                                <li><a href="#objective">Objective's</a></li>
+                            </ul>
+                        <li><a href="about.html" class="dropdown-trigger" data-target="dropdown2">About</a></li>
+                            <ul id="dropdown2" class="dropdown-content red">
+                                <li><a href="#intro">Introduction</a></li>
+                                <li><a href="#history">History</a></li>
+                            </ul>
+                        <li><a href="highlight.html" class="dropdown-trigger" data-target="dropdown3">Highlight's</a></li>
+                            <ul id="dropdown3" class="dropdown-content red">
+                                <li><a href="#iconic">Iconic Member's</a></li>
+                                <li><a href="#epic">Epic Battle</a></li>
+                            </ul>
+                        <li><a href="trivia.html">Trivia</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>        
+        <div class="container">    
+            <ul class="sidenav center" id="mobile-menu">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                      <a href="#" class="collapsible-header">家</a>
+                      <div class="collapsible-body transparent">
+                        <ul>
+                           <li><a href="index.html">Home</a></li>
+                           <li><a href="#member's">Member's</a></li>
+                           <li><a href="#objective">Objective's</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                </ul>
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                      <a href="#" class="collapsible-header">について</a>
+                      <div class="collapsible-body transparent">
+                        <ul>
+                           <li><a href="about.html">About</a></li>
+                           <li><a href="#intro">Introduction</a></li>
+                           <li><a href="#history">History</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                </ul>        
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                      <a href="#" class="collapsible-header">ハイライト</a>
+                      <div class="collapsible-body transparent">
+                        <ul>
+                           <li><a href="highlight.html">Highlight's</a></li>
+                           <li><a href="#iconic">Iconic Member's</a></li>
+                           <li><a href="#epic">Epic Battle</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                </ul>
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                      <a href="#" class="collapsible-header">トリビア</a>
+                      <div class="collapsible-body transparent">
+                        <ul>
+                           <li><a href="trivia.html">Trivia</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                </ul>
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                      <a href="#" class="collapsible-header">接触</a>
+                      <div class="collapsible-body transparent">
+                        <ul>
+                           <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </header>
+
+    <section class="container section scrollspy" id="iconic">
+        <div class="row">
+            <h1 class="black-text center">ICONIC MEMBER's</h1>
+            <br><br><br>
+            <div class="col s12 l4">
+                <img src="img/pain.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6">
+                <h2 class="red-text text-darken-2">Pain (Nagato)</h2>
+                <ul class="collapsible popout">
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">account_circle</i>Basis</div>
+                      <div class="collapsible-body"><span>Pain (Nagato) is a legendary member of the Akatsuki due to his immense power, leadership, and ideological depth. Wielding the Rinnegan, he controlled the Six Paths of Pain, using god-like techniques like Almighty Push and Planetary Devastation. As the Akatsuki’s leader, he redefined its mission, uniting rogue ninjas into a global threat. His philosophy of achieving peace through shared suffering added complexity to his character, making him both a fearsome villain and a tragic figure. Nagato’s impact, particularly his destruction of the Hidden Leaf Village, cemented his legacy in the Naruto world.</span></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">whatshot</i>Technique</div>
+                      <div class="collapsible-body"><span>1. Six Paths of Pain (Rinnegan Abilities)
+                        Pain uses the bodies of six deceased individuals, each representing a different aspect of his Rinnegan’s abilities. These include:
+                        Deva Path: Controls gravity, allowing techniques like Almighty Push (Shinra Tensei) to repel opponents and Planetary Devastation (Chibaku Tensei) to create a large gravitational pull to trap enemies.
+                        Asura Path: Grants the ability to transform the body into mechanical weapons and armor, enhancing physical combat abilities.
+                        Human Path: Allows the user to read minds and extract souls by touching the forehead.
+                        Animal Path: Summons various creatures to aid in battle, including large animals like giant chameleons or multi-headed beasts.
+                        Preta Path: Can absorb chakra-based techniques, making it highly effective against ninjutsu and energy-based attacks.
+                        Naraka Path: Summons the King of Hell to interrogate or revive individuals by restoring their bodies.<br><br>
+                        2. Almighty Push (Shinra Tensei)
+                        A powerful gravitational force that repels everything in the vicinity, capable of causing massive destruction, such as the obliteration of the Hidden Leaf Village.<br><br>
+                        3. Planetary Devastation (Chibaku Tensei)
+                        Creates a massive gravitational pull, drawing everything around it into a compressed sphere. This technique is used to trap enemies or even large objects, such as a Tailed Beast.<br><br>
+                        4. Chibaku Tensei (Rinnegan Ability)
+                        A technique that creates a massive sphere of compressed gravity, which can trap opponents or even a Tailed Beast.<br><br>
+                        5. Rinne Rebirth (Rinne Tensei)
+                        A technique that allows the user to revive the dead by transferring their life force into the bodies of the deceased. Pain used this technique to bring back the villagers he had killed in Konoha.</span></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">public</i>Impact</div>
+                      <div class="collapsible-body"><span>Pain (Nagato) left a lasting impact on the shinobi world through his destruction of the Hidden Leaf Village and his philosophy of achieving peace through shared suffering. His ideology challenged Naruto’s beliefs, shaping his path as a leader. Pain’s story highlighted the tragic cycle of hatred, but his final act of redemption—reviving those he had killed—symbolized the potential for change. His actions and ideals remain a pivotal part of the Naruto narrative.
+                      </span></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/Itachi.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6">
+                <h2 class="red-text text-darken-2">Itachi Uchiha</h2>
+                <ul class="collapsible popout">
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">account_circle</i>Basis</div>
+                      <div class="collapsible-body"><span>Itachi Uchiha is considered one of the legendary members of the Akatsuki due to his unmatched skills with the Sharingan, including powerful techniques like Amaterasu, Tsukuyomi, and Susanoo. His critical role in the Akatsuki’s goals, combined with his tragic backstory of massacring his clan to protect Konoha, adds depth to his character. Itachi's complex motivations and hidden loyalty to Konoha make him one of the most influential characters in Naruto, especially in shaping his brother Sasuke’s journey. His power, actions, and legacy solidify his status as a legendary member.
+                      </span></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">whatshot</i>Technique</div>
+                      <div class="collapsible-body"><span>1. Sharingan Techniques<br>
+                        Genjutsu: Itachi was a master of genjutsu, using his Sharingan to manipulate opponents’ perceptions and control their minds. He could cast powerful illusions with a simple glance.<br>
+                        Katon: Gōkakyū no Jutsu (Fire Style: Fireball Jutsu): A signature Uchiha technique, where Itachi spits a massive fireball from his mouth.<br>
+                        Tsukuyomi: A powerful genjutsu unique to the Mangekyō Sharingan, Tsukuyomi traps the victim in a time-altering illusion, causing them to experience immense pain and suffering in a short span of real-world time.<br><br>
+                        2. Mangekyō Sharingan Techniques
+                        Amaterasu: A black flame that can burn anything it touches, even consuming the user’s own body if not controlled. Itachi used this technique to create flames that could not be extinguished by conventional means.<br>
+                        Susanoo: A powerful, ethereal warrior that Itachi could summon to protect him. The full form of Susanoo can act as a massive, offensive and defensive entity capable of immense destruction.
+                        Totsuka Blade: A weapon formed by Susanoo, it is a sword that seals anything it pierces in an eternal genjutsu, rendering them trapped in an endless dream-like state.<br>
+                        Yata Mirror: Another defensive ability of Susanoo, the Yata Mirror has the ability to reflect all attacks, making Itachi invulnerable to most forms of offense.<br><br>
+                        3. Other Techniques
+                        Kage Bunshin no Jutsu (Shadow Clone Technique): Like many ninjas, Itachi could create clones, though he often used them strategically to mislead or confuse his opponents.<br>
+                        Shuriken Jutsu: Itachi was highly skilled with throwing shurikens, often enhancing them with his genjutsu to increase their effectiveness.</span></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">public</i>Impact</div>
+                      <div class="collapsible-body"><span>Itachi Uchiha had a profound impact on Naruto, particularly through his role in shaping Sasuke’s journey. His massacre of the Uchiha clan, though initially seen as betrayal, was revealed to be a sacrifice to prevent a civil war, challenging ideas of loyalty and justice in Konoha. As a key Akatsuki member, Itachi’s power and intellect were crucial to the organization’s goals. His tragic story of sacrifice and redemption left a lasting legacy, influencing Sasuke’s worldview and decisions, ultimately leading to peace in the series. Itachi’s impact is felt through the complex themes of sacrifice, loyalty, and moral conflict.</span></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/Kisame.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6">
+                <h2 class="red-text text-darken-2">Kisame Hoshigaki</h2>
+                <ul class="collapsible popout">
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">account_circle</i>Basis</div>
+                      <div class="collapsible-body"><span>Kisame Hoshigaki is considered one of the legendary members of the Akatsuki due to his immense strength, skills, and unique abilities. As a former member of the Seven Ninja Swordsmen of the Mist, Kisame wielded the powerful sword Samehada, which could absorb chakra and was a significant asset to the Akatsuki. His combat prowess, enhanced by his shark-like abilities and mastery of water-based jutsu, made him a formidable force. Kisame’s loyalty to Itachi and his role in capturing Tailed Beasts cemented his place as a key figure in the organization, contributing to its power and goals.
+                      </span></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">whatshot</i>Technique</div>
+                      <div class="collapsible-body"><span>1. Samehada (Sword of the Sea)
+                        Samehada is Kisame's unique sword, which can absorb chakra from his opponents and heal him. It’s also a powerful weapon in close combat, capable of cutting through nearly anything.
+                        2. Water-Based Jutsu (Suiton)<br>
+                        Suiton: Suiryūdan no Jutsu (Water Style: Water Dragon Jutsu): Kisame could create large, powerful water dragons to attack his enemies.<br>
+                        Suiton: Daibakufu no Jutsu (Water Style: Great Waterfall Jutsu): He could summon massive torrents of water to overwhelm and drown his opponents.<br>
+                        Suiton: Suiyōda no Jutsu (Water Style: Water Shark Bullet Jutsu): A technique where Kisame creates shark-shaped water projectiles that are fast and difficult to avoid.<br>
+                        Suiton: Goshokuzame (Water Style: Five Shark Blades): He summons five sharks made of water to attack his enemies, each capable of causing significant damage.<br>
+                        3. Kisame’s Fusion with Samehada<br>
+                        Kisame could fuse with Samehada, transforming into a monstrous version of himself that further enhances his strength and chakra abilities, making him a near-unstoppable force.<br>
+                        4. Kisame’s Chakra Absorption
+                        By using Samehada, Kisame could absorb chakra from opponents, making him particularly dangerous against chakra-based attacks.<br>
+                        5. Tailed Beast Mode<br>
+                        Kisame also had the ability to gather enough chakra to perform large-scale jutsu and even create a Shark Bomb capable of summoning the power of a Tailed Beast, as seen when he tried to use this power to overpower his enemies.</span></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">public</i>Impact</div>
+                      <div class="collapsible-body"><span>Kisame Hoshigaki had a significant impact on Naruto as a powerful warrior and loyal Akatsuki member. His mastery of water-based jutsu and his partnership with Itachi in capturing Tailed Beasts were crucial to the organization’s goals. Kisame's battles, especially with Guy, showcased his strength and made him a memorable and formidable threat in the series.</span></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/Deidara.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6">
+                <h2 class="red-text text-darken-2">Deidara</h2>
+                <ul class="collapsible popout">
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">account_circle</i>Basis</div>
+                      <div class="collapsible-body"><span>Deidara is considered one of the legendary members of the Akatsuki due to his exceptional skill in clay-based explosives and his unique approach to combat. Using his ability to mold explosive clay into various creatures and shapes, he could create powerful and highly destructive bombs. His artistic philosophy, where he viewed destruction as a form of art, set him apart as both a creative and dangerous member of the Akatsuki. His contributions in missions, particularly in capturing Tailed Beasts, and his explosive combat style made him a key figure within the organization.</span></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">whatshot</i>Technique</div>
+                      <div class="collapsible-body"><span>1. Explosive Clay (Bimyou no Jutsu)<br>
+                        Deidara’s signature ability is the use of clay that he molds into various shapes, which can then be detonated remotely. He uses mouths in his palms and on his chest to mold the clay and breathe life into it.<br>
+                        2. Clay Sculptures<br>
+                        Doton: Doryūdan (Earth Style: Mud Cannon): Deidara creates clay creatures, such as birds and snakes, that can fly, attack, or serve as distractions. These sculptures explode on command, making them both effective and dangerous.<br>
+                        Katsu: The word Deidara uses to detonate his clay creations. He triggers explosions remotely after they’ve been set.<br>
+                        3. C1 - C4 Clay Explosions<br>
+                        C1: Deidara’s most basic explosive clay, used to form small creatures, usually birds, that explode on command.<br>
+                        C2: Larger and more powerful creatures, including dragons, capable of causing mass destruction. Deidara can also use C2 to launch clay bombs from a distance.<br>
+                        C3: A massive clay bomb that can cause huge destruction, such as the one Deidara used to destroy part of Hidden Sand Village.<br>
+                        C4: A deadly, microscopic clay explosion that can disintegrate the enemy's cells, killing them with no visible sign of the attack. It’s a lethal weapon with devastating effects.<br>
+                        4. Self-Detonation (C0)<br>
+                        As a last resort, Deidara uses C0, a self-destructive technique where he consumes his own clay and triggers a massive explosion, sacrificing himself in the process. This attack was used in his final battle with Sasuke.</span></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">public</i>Impact</div>
+                      <div class="collapsible-body"><span>Deidara had a significant impact on Naruto through his unique combat style and artistic philosophy. His mastery of clay-based explosives made him a formidable opponent, capable of causing massive destruction with his creations. As a key Akatsuki member, he contributed to the organization’s goals, especially in capturing Tailed Beasts. Deidara's explosive techniques and his rivalry with Sasuke added depth to the series, showcasing his creative approach to destruction and leaving a lasting impression on fans.</span></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+ 
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/bg2.jpg" alt="" class="responsive-img">
+        </div>
+    </div>
+
+
+    <div class="container section scrollspy" id="epic">
+        <div class="row">
+            <div class="col s12">
+                <h2 class="blsck-text center text-darken-4">Peace is nothing but an illusion crafted by the strong. We will shatter it and rebuild the world in our image, even if it means drowning it in darkness first.</h2><br><br><br><br><br><br>
+            </div>
+            <div class="container">
+                <h2 class="red-text center">Epic Battle</h2>
+                <div class="row">
+                  <div class="col s6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/svi.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Itachi vs Sasuke</span>
+                            <p>Sasuke battles Itachi for revenge, clashing with powerful jutsu. Itachi dies, not from Sasuke’s attacks but illness. Sasuke later learns Itachi’s actions were to protect him and Konoha.</p>
+                        </div>
+                        <div class="card-action">
+                            <a class="red-text" href="https://youtu.be/MOxEuvGDbLM?si=M5az5NAkJJSQnviw" target="_blank">Video</a>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col s6">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="img/pvn.jpg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">Naruto vs Pain</span>
+                                <p>Naruto fights Pain to protect Konoha, mastering Sage Mode to counter Pain’s powerful abilities. After a fierce battle, Naruto defeats Pain and convinces Nagato, Pain's true self, to restore the lives lost in the attack.</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="red-text" href="https://youtu.be/aoi7k-pUdjw?si=lsplbh-sFwrjUjMy" target="_blank">Video</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s6">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="img/ikvj.jpg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">Itachi & Kisame vs Jaraiya</span>
+                                <p>Itachi and Kisame confront Jiraiya while pursuing Naruto. Itachi uses Tsukuyomi on Sasuke, but they retreat when Jiraiya traps them with his powerful Toad Mouth Bind, avoiding a direct fight.</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="red-text" href="https://youtu.be/AQpTsVi5_6w?si=8VKlzvNjY4Q2BKPR" target="_blank">Video</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s6">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="img/kvo.jpg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">Konan vs Tobi</span>
+                                <p>Konan battles Tobi to protect Nagato's Rinnegan. She uses a massive paper bomb technique, nearly defeating him, but Tobi survives with Izanagi and kills her, taking the Rinnegan.</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="red-text" href="https://youtu.be/5W61t6SZUU8?si=hxRPHnMA9_R8crRc" target="_blank">Video</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="img/svd.jpg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">Sasuke vs Deidara</span>
+                                <p>Deidara faces Sasuke in an intense battle, relying on his explosive clay techniques, including his C2 dragon and microscopic bombs, to overpower him. Sasuke counters with his Sharingan, predicting Deidara’s moves, and uses lightning jutsu to neutralize the clay. Frustrated, Deidara unleashes his ultimate self-destruction, creating a massive explosion to kill Sasuke. However, Sasuke cleverly escapes by summoning Manda and using a space-time ninjutsu, leaving Deidara to perish in his own attack.</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="red-text" href="https://youtu.be/nJiJcVXjopY?si=i6Vzd7pptnX0OjVJ" target="_blank">Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+            
+   
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/b14.png" alt="" class="responsive-img">
+        </div>
+    </div>
+
+
+    <footer class="page-footer black">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5>About Akatsuki</h5>
+                    <p>The Akatsuki is a notorious criminal organization in the Naruto series, originally founded with the goal of bringing peace to the war-torn world. Led by Nagato (Pain) after Yahiko's death, it evolved into a ruthless group focused on capturing the Tailed Beasts to control the world through fear and power. Comprised of skilled rogue ninjas with dark pasts, the Akatsuki became a symbol of both destruction and ambition, leaving a lasting impact on the shinobi world. Their actions and conflicts are central to the series' narrative.</p>
+                </div>
+                <div class="col s12 l4 offset-l2">
+                    <h5>Connect</h5>
+                    <ul>
+                        <li><span><a href="https://www.facebook.com/username5453?mibextid=ZbWKwL" target="_blank" class="btn-floating btn-small red">
+                            <i class="fab fa-facebook"></i>
+                        </a></span> Facebook </li><br>
+                        <li><span><a href="https://youtube.com/@theamagiyt?si=17kRUl10LNlbw4kA" target="_blank" class="btn-floating btn-small red">
+                            <i class="fab fa-youtube"></i>
+                        </a></span> Youtube </li><br>
+                        <li><span><a href="https://www.instagram.com/akatsuki?igsh=MjB2bWpmcGx1d3g2" target="_blank" class="btn-floating btn-small red">
+                            <i class="fab fa-instagram"></i>
+                        </a></span> Instagram </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright dark red text-darken-4">
+            <div class="container center-align">&copy; 2024 Akatsuki.Org</div>
+        </div>
+    </footer>
+
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script>
+        $ (document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.collapsible').collapsible();
+            $('.dropdown-trigger').dropdown({
+                coverTrigger:false,
+                constrainWidth:false,
+                hover:true
+            })
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker({
+                disableWeekends: true
+            });
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+        });
+    </script>
+</body>
+</html>

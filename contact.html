@@ -1,0 +1,240 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Akatsuki</title>
+    <style>
+        header{
+            background: url(img/c2.png);
+            background-size: cover;
+            background-position: center;
+            min-height: 1000px;
+        }
+        .nav {
+            position: fixed;
+            z-index: 100;
+        }
+        .dropdown-content li a {
+            color: white;
+        }
+        .sidenav {
+            background-image: url(img/m1.jpg);
+            z-index: 1000;
+        }
+        .sidenav li a {
+            color: white;
+        }
+        .row p {
+            font-size: 18px;
+        }
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+        @media screen and (max-width: 670px){
+            header {
+                min-height: 500px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- navbar -->
+    <header>
+        <div class="navbar-fixed">
+            <nav class="nav-wrapper red">
+                <div class="container">
+                    <a href="https://naruto.fandom.com/wiki/Akatsuki" target="_blank" class="brand-logo">Akatsuki.Org</a>
+                    <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="index.html" class="dropdown-trigger" data-target="dropdown1">Home</a></li>
+                            <ul id="dropdown1" class="dropdown-content red">
+                                <li><a href="#member's">Member's</a></li>
+                                <li><a href="#services">Service</a></li>
+                            </ul>
+                        <li><a href="about.html" class="dropdown-trigger" data-target="dropdown2">About</a></li>
+                            <ul id="dropdown2" class="dropdown-content red">
+                                <li><a href="#intro">Introduction</a></li>
+                                <li><a href="#history">History</a></li>
+                            </ul>
+                        <li><a href="highlight.html" class="dropdown-trigger" data-target="dropdown3">Highlight's</a></li>
+                            <ul id="dropdown3" class="dropdown-content red">
+                                <li><a href="#iconic">Iconic Member's</a></li>
+                                <li><a href="#epic">Epic Battle</a></li>
+                            </ul>
+                        <li><a href="trivia.html">Trivia</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>        
+        <div class="container">    
+            <ul class="sidenav center" id="mobile-menu">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                      <a href="#" class="collapsible-header">家</a>
+                      <div class="collapsible-body transparent">
+                        <ul>
+                           <li><a href="index.html">Home</a></li>
+                           <li><a href="#member's">Member's</a></li>
+                           <li><a href="#objective">Objective's</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                </ul>
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                      <a href="#" class="collapsible-header">について</a>
+                      <div class="collapsible-body transparent">
+                        <ul>
+                           <li><a href="about.html">About</a></li>
+                           <li><a href="#intro">Introduction</a></li>
+                           <li><a href="#history">History</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                </ul>        
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                      <a href="#" class="collapsible-header">ハイライト</a>
+                      <div class="collapsible-body transparent">
+                        <ul>
+                           <li><a href="highlight.html">Highlight's</a></li>
+                           <li><a href="#iconic">Iconic Member's</a></li>
+                           <li><a href="#epic">Epic Battle</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                </ul>
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                      <a href="#" class="collapsible-header">トリビア</a>
+                      <div class="collapsible-body transparent">
+                        <ul>
+                           <li><a href="trivia.html">Trivia</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                </ul>
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                      <a href="#" class="collapsible-header">接触</a>
+                      <div class="collapsible-body transparent">
+                        <ul>
+                           <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </header>
+
+    <section class="container section scrollspy" id="contact">
+        <div class="row">
+            <div class="col s12 l5">
+                <h2 class="red-text text-darken-4">Contact Us</h2>
+                <p>If you're seeking to get in touch with the Akatsuki, it’s essential to understand the risks and the gravity of such a decision. The organization operates in secrecy, and any attempt to contact them should be made with great caution. They do not entertain idle conversation or unwarranted interference, but rather, welcome only those who have a purpose that serves their greater goals. Whether you’re looking to propose an alliance, offer information, or present a proposition, reaching out must be done through trusted channels, using coded messages or intermediaries who are known to the Akatsuki. Understand that any contact with them will not be taken lightly, and only those with significant value or strategic importance will catch their attention. If you are determined to make your presence known, ensure your purpose is clear, your intentions unwavering, and your resolve unbreakable.</p>
+            </div>
+            <br><br><br><br><br>
+            <div class="col s12 l5 offset-l2">
+                <div class="input-field">
+                    <i class="material-icons prefix" style="color: red;">email</i>
+                    <input type="email" id="email">
+                    <label for="email">Your Email</label> 
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix" style="color: red;">message</i>
+                    <textarea name="message" id="message" class="materialize-textarea"></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix" style="color: red;">date_range</i>
+                    <input type="text" id="date" class="datepicker">
+                    <label for="date">Choose a date you need me for...</label>
+                </div>
+                <div class="input-field">
+                    <p>Services required...</p>
+                    <p>
+                        <label>
+                            <input type="checkbox">
+                            <span>Walk In</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox">
+                            <span>Online</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="input-field center">
+                    <button class="btn red">Submit</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <footer class="page-footer black">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5>About Akatsuki</h5>
+                    <p>The Akatsuki is a notorious criminal organization in the Naruto series, originally founded with the goal of bringing peace to the war-torn world. Led by Nagato (Pain) after Yahiko's death, it evolved into a ruthless group focused on capturing the Tailed Beasts to control the world through fear and power. Comprised of skilled rogue ninjas with dark pasts, the Akatsuki became a symbol of both destruction and ambition, leaving a lasting impact on the shinobi world. Their actions and conflicts are central to the series' narrative.</p>
+                </div>
+                <div class="col s12 l4 offset-l2">
+                    <h5>Connect</h5>
+                    <ul>
+                        <li><span><a href="https://www.facebook.com/username5453?mibextid=ZbWKwL" target="_blank" class="btn-floating btn-small red">
+                            <i class="fab fa-facebook"></i>
+                        </a></span> Facebook </li><br>
+                        <li><span><a href="https://youtube.com/@theamagiyt?si=17kRUl10LNlbw4kA" target="_blank" class="btn-floating btn-small red">
+                            <i class="fab fa-youtube"></i>
+                        </a></span> Youtube </li><br>
+                        <li><span><a href="https://www.instagram.com/akatsuki?igsh=MjB2bWpmcGx1d3g2" target="_blank" class="btn-floating btn-small red">
+                            <i class="fab fa-instagram"></i>
+                        </a></span> Instagram </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright dark red text-darken-4">
+            <div class="container center-align">&copy; 2024 Akatsuki.Org</div>
+        </div>
+    </footer>
+
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script>
+        $ (document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.collapsible').collapsible();
+            $('.dropdown-trigger').dropdown({
+                coverTrigger:false,
+                constrainWidth:false,
+                hover:true
+            })
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker({
+                disableWeekends: true
+            });
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+        });
+    </script>
+</body>
+</html>

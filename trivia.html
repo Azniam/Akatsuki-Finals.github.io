@@ -1,0 +1,402 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Akatsuki</title>
+    <style>
+        header{
+            background: url(img/b6.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 1000px;
+        }
+        .nav {
+            position: fixed;
+            z-index: 100;
+        }
+        .dropdown-content li a {
+            color: white;
+        }
+        .sidenav {
+            background-image: url(img/m1.jpg);
+            z-index: 1000;
+        }
+        .sidenav li a {
+            color: white;
+        }
+        .photography p {
+            text-align: justify;
+        }
+        .row p {
+            font-size: 18px;
+        }
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+        .tabs .indicator{
+            background-color: red;
+        }
+        .tabs .tab a:focus, .tabs .tab a:focus.active{
+            background: transparent;
+        }
+        @media screen and (max-width: 670px){
+            header {
+                min-height: 500px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <div class="navbar-fixed">
+            <nav class="nav-wrapper red">
+                <div class="container">
+                    <a href="https://naruto.fandom.com/wiki/Akatsuki" target="_blank" class="brand-logo">Akatsuki.Org</a>
+                    <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="index.html" class="dropdown-trigger" data-target="dropdown1">Home</a></li>
+                            <ul id="dropdown1" class="dropdown-content red">
+                                <li><a href="#member's">Member's</a></li>
+                                <li><a href="#objective">Objective's</a></li>
+                            </ul>
+                        <li><a href="about.html" class="dropdown-trigger" data-target="dropdown2">About</a></li>
+                            <ul id="dropdown2" class="dropdown-content red">
+                                <li><a href="#intro">Introduction</a></li>
+                                <li><a href="#history">History</a></li>
+                            </ul>
+                        <li><a href="highlight.html" class="dropdown-trigger" data-target="dropdown3">Highlight's</a></li>
+                            <ul id="dropdown3" class="dropdown-content red">
+                                <li><a href="#iconic">Iconic Member's</a></li>
+                                <li><a href="#epic">Epic Battle</a></li>
+                            </ul>
+                        <li><a href="trivia.html">Trivia</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>        
+        <div class="container">    
+            <ul class="sidenav center" id="mobile-menu">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                      <a href="#" class="collapsible-header">家</a>
+                      <div class="collapsible-body transparent">
+                        <ul>
+                           <li><a href="index.html">Home</a></li>
+                           <li><a href="#member's">Member's</a></li>
+                           <li><a href="#objective">Objective's</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                </ul>
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                      <a href="#" class="collapsible-header">について</a>
+                      <div class="collapsible-body transparent">
+                        <ul>
+                           <li><a href="about.html">About</a></li>
+                           <li><a href="#intro">Introduction</a></li>
+                           <li><a href="#history">History</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                </ul>        
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                      <a href="#" class="collapsible-header">ハイライト</a>
+                      <div class="collapsible-body transparent">
+                        <ul>
+                           <li><a href="highlight.html">Highlight's</a></li>
+                           <li><a href="#iconic">Iconic Member's</a></li>
+                           <li><a href="#epic">Epic Battle</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                </ul>
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                      <a href="#" class="collapsible-header">トリビア</a>
+                      <div class="collapsible-body transparent">
+                        <ul>
+                           <li><a href="trivia.html">Trivia</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                </ul>
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                      <a href="#" class="collapsible-header">接触</a>
+                      <div class="collapsible-body transparent">
+                        <ul>
+                           <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </header>
+    <section class="container section">
+        <div class="row">
+            <div class="col s12">
+                <h2 class="red-text center text-darken-4">TRIVIA & FACTS</h2>
+                <br><br><br>
+            </div>
+            <div class="container">
+                <h2 class="black-text center">"Only the Strongest Will Know the Secrets of the Akatsuki!"</h2>
+                <br><br><br><br>
+                <div class="row">
+                   
+                    <div class="col s12 m6">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="img/t1.avif" alt="Card Image">
+                                <a class="btn-floating halfway-fab waves-effect waves-light red modal-trigger" href="#modal1">
+                                    <i class="material-icons">zoom_in</i>
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">The group were originally all monsters</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                   
+                    <div id="modal1" class="modal">
+                        <div class="modal-content">
+                            <h4>The group were originally all monsters</h4>
+                            <p>When Kishimoto first envisioned the concept of the Akatsuki, he originally intended for the group to be far more monster-based than the finished product, with no human characters involved in the organization at all.<br><br>
+
+                            This can be seen in the inclusion of figures such as the shark hybrid Kisame and the plant-like Zetsu who were retained from Kishimoto's original idea. Kakuzu also started out as a more fantastical looking entity in earlier designs and was based on the Kuchisake-onna creature from Japanese mythology. As the beastly influence was dialed down in favor of a more human presence, the likes of Kakuzu and Sasori become less outlandish and fully-fledged humans like Deidara and Itachi were also brought into the fold.<br><br>
+                            
+                            Whilst it may have been interesting to see a more monstrous version of Akatsuki, this could have been at the expense of the group’s morally gray moments and the many human failings that make them all so compelling.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a class="modal-close waves-effect waves-green btn-flat">Close</a>
+                        </div>
+                    </div>
+    
+                    
+                    <div class="col s12 m6">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="img/t2.avif" alt="Card Image">
+                                <a class="btn-floating halfway-fab waves-effect waves-light red modal-trigger" href="#modal2">
+                                    <i class="material-icons">zoom_in</i>
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">The Six Paths of Pain are inspired by Buddhism</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                   
+                    <div id="modal2" class="modal">
+                        <div class="modal-content">
+                            <h4>The Six Paths of Pain are inspired by Buddhism</h4>
+                            <p>Inspiration for character designs can come from absolutely anywhere. For instance, Nagato’s Six Paths of Pain take its cues from the teachings of Buddhism.<br><Br>
+
+                            Thanks to the power of his Rinnegan, Nagato is able to control six distinct ginger-haired warriors and lay waste to the village of Konoha. These beings are referred to as the Six Paths of Pain, a title that is a reference to the Buddhist paths of reincarnation. This is especially fitting as each body of Pain is actually a reanimated person, but the comparison goes deeper, as each Path of Pain also shares a name with one of the spiritual Buddhist paths.<br><br>
+                            
+                            In Buddhist teachings, the paths to reincarnation are considered stumbling blocks in the journey of rebirth that one can overcome with enlightenment and this perhaps mirrors the fact that until Nagato is “enlightened” by Naruto’s famous “Talk no Jutsu,” he is trapped in an endless cycle of suffering.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a class="modal-close waves-effect waves-green btn-flat">Close</a>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m6">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="img/t3.avif" alt="Card Image">
+                                <a class="btn-floating halfway-fab waves-effect waves-light red modal-trigger" href="#modal3">
+                                    <i class="material-icons">zoom_in</i>
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">Two active members are still alive</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    
+                    <div id="modal3" class="modal">
+                        <div class="modal-content">
+                            <h4>Two active members are still alive</h4>
+                            <p>Although the Akatsuki are no longer a threat in the Naruto universe as things stand, two members have yet to either quit the group or be killed: Hidan and Black Zetsu.<br><br>
+
+                            The memorable battle between the immortal Hidan and the Leaf Shinobi Shikamaru is arguably one of Shippuden’s best and concludes with the Konoha ninja burying his opponent alive, fully aware that Hidan can’t be killed by conventional means. With nothing to suggest otherwise, it must be assumed that the villain remains in the same spot.<br><br>
+                            
+                            Black Zetsu was the real driving force behind the latter incarnations of Akatsuki and everything the group did was performed with the ultimate goal of freeing Kaguya Ōtsutsuki in mind. After Kaguya’s defeat, she was sealed away once more and Naruto ensured Black Zetsu would be joining her. Although both Hidan or Zetsu are no longer a threat, neither can they be considered truly dead.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a class="modal-close waves-effect waves-green btn-flat">Close</a>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m6">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="img/t4.avif" alt="Card Image">
+                                <a class="btn-floating halfway-fab waves-effect waves-light red modal-trigger" href="#modal4">
+                                    <i class="material-icons">zoom_in</i>
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">Their name translates to English as "Dawn"</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    
+                    <div id="modal4" class="modal">
+                        <div class="modal-content">
+                            <h4>Their name translates to English as "Dawn"</h4>
+                            <p>Often in Naruto, the English translation of a character’s name provides some level of revealing insight into the concept of their character. For instance, Naruto’s own name is both a reference to his love of ramen and a nod to the origins of the Uzumaki clan. Additionally, Kakashi translates to “scarecrow,” giving some reasoning behind the Jonin’s slender frame and straw-like hair.<br><br>
+                                
+                            In the case of Akatsuki, the title can be translated to “Dawn” or “Daybreak” and, considering the group’s origins, this makes perfect sense. After all, the organization started out with the intention of creation a new, peaceful world and the imagery of a sunrise perfectly encapsulates this aim of triggering a brighter new era.<bR><br>
+
+                            Of course as Akatsuki degenerated, the connection to a new dawn became somewhat more ironic than inspiring, since the group's promised new era looked both bleak and bloody.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a class="modal-close waves-effect waves-green btn-flat">Close</a>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m6">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="img/t5.avif" alt="Card Image">
+                                <a class="btn-floating halfway-fab waves-effect waves-light red modal-trigger" href="#modal5">
+                                    <i class="material-icons">zoom_in</i>
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">Kishimoto's design for Konan was quite revealing</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                   
+                    <div id="modal5" class="modal">
+                        <div class="modal-content">
+                            <h4>Kishimoto's design for Konan was quite revealing</h4>
+                            <p>Fairly or unfairly, anime has a reputation for needlessly and overtly sexualizing female characters and providing moments of fan service in which unnecessary shots of semi-nudity are included to provide additional titillation.<br><br>
+                                
+                            The Naruto franchise is certainly not innocent in this regard, and although the character of Konan perhaps isn’t the most obvious culprit (cough-- Tsunade-- cough), creator Masashi Kishimoto had other plans for her.<br><br>
+
+                            In an official data book entry, Kishimoto claimed that since Konan was the only female in Akatsuki, her design and clothing were made intentionally revealing, with the character being jokingly described as “obscene.” Of course, since Konan spends the vast majority of her time on screen covered in a long black cloak, this particular trait goes largely unnoticed.<br><br>
+                                
+                            Interestingly, Konan also has a pierced belly button.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a class="modal-close waves-effect waves-green btn-flat">Close</a>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m6">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="img/t6.avif" alt="Card Image">
+                                <a class="btn-floating halfway-fab waves-effect waves-light red modal-trigger" href="#modal6">
+                                    <i class="material-icons">zoom_in</i>
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">Some members and key events are filler
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+    
+                   
+                    <div id="modal6" class="modal">
+                        <div class="modal-content">
+                            <h4>Some members and key events are filler</h4>
+                            <p>Naruto fans unfamiliar with Kishimoto’s original manga series may not know that the anime went into far greater detail regarding Akatsuki’s history and formation, as well as their capturing of the Tailed Beasts. As a result, a fair amount of the show’s Akatsuki material isn’t actually considered canon to the Naruto story.<br><br>
+
+                            For example, the roles of original members Kyūsuke and Daibutsu are greatly expanded in the anime and Swordsman of the Mist Jūzō joins the group in animated form only.<br><br>
+                                
+                            In terms of events, the sealing of the Six and Seven Tails, as well as Obito’s murder of some original Akatsuki members are all technically filler segments. The Three-Tails arc is also greatly modified and expanded, which caused inconsistency in the dialogue regarding the amount of Tailed Beasts Akatsuki had collected, with the number changing to accommodate the anime’s growing filler schedule.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a class="modal-close waves-effect waves-green btn-flat">Close</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+      
+
+    
+     <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/b7.jpg" alt="" class="responsive-img">
+        </div>
+    </div>
+   
+    <footer class="page-footer black">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5>About Akatsuki</h5>
+                    <p>The Akatsuki is a notorious criminal organization in the Naruto series, originally founded with the goal of bringing peace to the war-torn world. Led by Nagato (Pain) after Yahiko's death, it evolved into a ruthless group focused on capturing the Tailed Beasts to control the world through fear and power. Comprised of skilled rogue ninjas with dark pasts, the Akatsuki became a symbol of both destruction and ambition, leaving a lasting impact on the shinobi world. Their actions and conflicts are central to the series' narrative.</p>
+                </div>
+                <div class="col s12 l4 offset-l2">
+                    <h5>Connect</h5>
+                    <ul>
+                        <li><span><a href="https://www.facebook.com/username5453?mibextid=ZbWKwL" target="_blank" class="btn-floating btn-small red">
+                            <i class="fab fa-facebook"></i>
+                        </a></span> Facebook </li><br>
+                        <li><span><a href="https://youtube.com/@theamagiyt?si=17kRUl10LNlbw4kA" target="_blank" class="btn-floating btn-small red">
+                            <i class="fab fa-youtube"></i>
+                        </a></span> Youtube </li><br>
+                        <li><span><a href="https://www.instagram.com/akatsuki?igsh=MjB2bWpmcGx1d3g2" target="_blank" class="btn-floating btn-small red">
+                            <i class="fab fa-instagram"></i>
+                        </a></span> Instagram </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright dark red text-darken-4">
+            <div class="container center-align">&copy; 2024 Akatsuki.Org</div>
+        </div>
+    </footer>
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script>
+        $ (document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.collapsible').collapsible();
+            $('.dropdown-trigger').dropdown({
+                coverTrigger:false,
+                constrainWidth:false,
+                hover:true
+            })
+            $('.materialboxed').materialbox();
+            $('.modal').modal();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker({
+                disableWeekends: true
+            });
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+        });
+    </script>
+</body>
+</html>

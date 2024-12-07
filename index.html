@@ -1,0 +1,363 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Akatsuki</title>
+    <style>
+        header{
+            background: url(img/bg3.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 1000px;
+        }
+        .nav {
+            position: fixed;
+            z-index: 100;
+        }
+        .dropdown-content li a {
+            color: white;
+        }
+        .sidenav {
+            background-image: url(img/m1.jpg);
+            z-index: 1000;
+        }
+        .sidenav li a {
+            color: white;
+        }
+        .photography p {
+            text-align: justify;
+        }
+        .row p {
+            font-size: 18px;
+        }
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+        .tabs .indicator{
+            background-color: red;
+        }
+        .tabs .tab a:focus, .tabs .tab a:focus.active{
+            background: transparent;
+        }
+        @media screen and (max-width: 670px){
+            header {
+                min-height: 500px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <div class="navbar-fixed">
+            <nav class="nav-wrapper red">
+                <div class="container">
+                    <a href="https://naruto.fandom.com/wiki/Akatsuki" target="_blank" class="brand-logo">Akatsuki.Org</a>
+                    <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="index.html" class="dropdown-trigger" data-target="dropdown1">Home</a></li>
+                            <ul id="dropdown1" class="dropdown-content red">
+                                <li><a href="#member's">Member's</a></li>
+                                <li><a href="#objective">Objective's</a></li>
+                            </ul>
+                        <li><a href="about.html" class="dropdown-trigger" data-target="dropdown2">About</a></li>
+                            <ul id="dropdown2" class="dropdown-content red">
+                                <li><a href="#intro">Introduction</a></li>
+                                <li><a href="#history">History</a></li>
+                            </ul>
+                        <li><a href="highlight.html" class="dropdown-trigger" data-target="dropdown3">Highlight's</a></li>
+                            <ul id="dropdown3" class="dropdown-content red">
+                                <li><a href="#iconic">Iconic Member's</a></li>
+                                <li><a href="#epic">Epic Battle</a></li>
+                            </ul>
+                        <li><a href="trivia.html">Trivia</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>        
+        <div class="container">    
+            <ul class="sidenav center" id="mobile-menu">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                      <a href="#" class="collapsible-header">家</a>
+                      <div class="collapsible-body transparent">
+                        <ul>
+                           <li><a href="index.html">Home</a></li>
+                           <li><a href="#member's">Member's</a></li>
+                           <li><a href="#objective">Objective's</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                </ul>
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                      <a href="#" class="collapsible-header">について</a>
+                      <div class="collapsible-body transparent">
+                        <ul>
+                           <li><a href="about.html">About</a></li>
+                           <li><a href="#intro">Introduction</a></li>
+                           <li><a href="#history">History</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                </ul>        
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                      <a href="#" class="collapsible-header">ハイライト</a>
+                      <div class="collapsible-body transparent">
+                        <ul>
+                           <li><a href="highlight.html">Highlight's</a></li>
+                           <li><a href="#iconic">Iconic Member's</a></li>
+                           <li><a href="#epic">Epic Battle</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                </ul>
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                      <a href="#" class="collapsible-header">トリビア</a>
+                      <div class="collapsible-body transparent">
+                        <ul>
+                           <li><a href="trivia.html">Trivia</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                </ul>
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                      <a href="#" class="collapsible-header">接触</a>
+                      <div class="collapsible-body transparent">
+                        <ul>
+                           <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </header>
+
+    <section class="container section scrollspy" id="member's">
+        <h1 class="center">MEMBER's</h1><br><br><br>
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/pain.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6">
+                <h2 class="red-text text-darken-2">Pain</h2>
+                <p>Pain is an unpleasant sensory and emotional experience that signals actual or potential harm to the body. It can be acute, lasting briefly, or chronic, persisting over time. As a protective mechanism, pain alerts us to injury or illness, prompting care and recovery.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/Konan.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6">
+                <h2 class="red-text text-darken-2">Konan</h2>
+                <p>Konan is a calm and composed individual known for her intelligence and loyalty. A master of origami, she wields paper as both art and weapon, embodying grace and strength in equal measure. Her unwavering determination reflects her deep convictions and loyalty to her cause.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/Tobi.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6">
+                <h2 class="red-text text-darken-2">Tobi</h2>
+                <p>Tobi is a playful and enigmatic figure, often hiding his true intentions behind a mask of humor and clumsiness. Beneath this façade lies a cunning strategist with a deep connection to the Akatsuki's ultimate goals. His unpredictable nature and hidden power make him a dangerous.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/Itachi.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6">
+                <h2 class="red-text text-darken-2">Itachi</h2>
+                <p>Itachi is a calm and highly skilled ninja, known for his extraordinary talent and cold, calculating demeanor. Despite his tragic past, he remains devoted to his mission and his younger brother, Sasuke. His sacrifice ultimately reveals the depth of his love and sense of duty.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/Kisame.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6">
+                <h2 class="red-text text-darken-2">Kisame</h2>
+                <p>Kisame is a fierce and ruthless warrior, known for his immense strength and loyalty to his partner, Itachi. Wielding the sword Samehada, he is a formidable opponent with a brutal fighting style. His shark-like appearance and savage nature make him both feared and respected.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/sasori.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6">
+                <h2 class="red-text text-darken-2">Sasori</h2>
+                <p>Sasori is a brilliant and cold-hearted puppeteer, known for his mastery over human puppets and his deadly skills. As a former member of the Akatsuki, he combines his art with poison to create lethal weapons. His detached nature and tragic past shape his belief that emotions are a weakness.</p>
+            </div>
+        </div><div class="row">
+            <div class="col s12 l4">
+                <img src="img/Deidara.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6">
+                <h2 class="red-text text-darken-2">Deidara</h2>
+                <p>Deidara is an eccentric and explosive artist, known for his mastery of clay-based explosives. He views his creations as works of art, believing that true art is fleeting and destructive. His impulsive nature and desire for recognition often lead him into dangerous confrontations.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/Kakuzu.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6">
+                <h2 class="red-text text-darken-2">Kakuzu</h2>
+                <p>Kakuzu is a ruthless and pragmatic mercenary, known for his ability to sew and reattach his own body parts, granting him near immortality. His greed and desire for money drive his actions, making him a cold and calculating member of the Akatsuki.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/Hidan.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6">
+                <h2 class="red-text text-darken-2">Hidan</h2>
+                <p>Hidan is a sadistic and relentless warrior, known for his immortality and fanatical devotion to his religion. He uses a unique ritual to curse his enemies, causing them to suffer the same wounds he inflicts on himself.</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/zetsu.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6">
+                <h2 class="red-text text-darken-2">Zetsu</h2>
+                <p>Zetsu is a mysterious and dual-natured member of the Akatsuki, with a split personality reflecting his two distinct forms. His ability to travel underground and gather information makes him a valuable asset to the organization.</p>
+            </div>
+        </div>
+        <div class="carousel">
+            <h2 class="center"> Six Path's of Pain</h2>
+            <div class="carousel">
+                <a class="carousel-item red-text" href="#one!">Deva Path<img src="img/deva path.jpg" class="responsive-img materialboxed"></a>
+                <a class="carousel-item red-text" href="#two!">Human Path<img src="img/human path.jpg" class="responsive-img materialboxed"></a>
+                <a class="carousel-item red-text" href="#three!">Asura Path<img src="img/asura path.jpg" class="responsive-img materialboxed"></a>
+                <a class="carousel-item red-text" href="#four!">Animal Path<img src="img/animal path.jpg" class="responsive-img materialboxed"></a>
+                <a class="carousel-item red-text" href="#five!">Naraka Path<img src="img/naraka path.jpg" class="responsive-img materialboxed"></a>
+                <a class="carousel-item red-text" href="#six!">Preta Path<img src="img/preta path.jpg" class="responsive-img materialboxed"></a>
+            </div>
+        </div>
+    </section>
+    
+
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/bg2.jpg" alt="" class="responsive-img">
+        </div>
+    </div>
+
+
+    <div class="container section scrollspy" id="objective">
+        <div class="row">
+            <div class="col s12 l4">
+                <h2 class="red-text text-darken-4">Their Objectives</h2>
+                <p>The Akatsuki is a group of rogue ninjas in Naruto that aims to capture the Tailed Beasts to achieve world domination. Led initially by Pain (Nagato), they fund their activities through assassinations and mercenary work while destabilizing nations. Their black cloaks with red clouds symbolize the bloodshed they cause in pursuit of their goals.</p>
+            </div>
+            <br><br><br><br><br><br>
+            <div class="col s12 l6 offset-l2">
+                <ul class="tabs">
+                    <li class="tab col s4">
+                        <a href="#hunting"class="red-text text-darken-4">Bijuu Hunting</a>
+                    </li>
+                    <li class="tab col s4">
+                        <a href="#covert"class="red-text text-darken-4">Covert Missions</a>
+                    </li>
+                    <li class="tab col s4">
+                        <a href="#power"class="red-text text-darken-4">Power Plays</a>
+                    </li>
+                </ul>
+                <div class="col s12" id="hunting">
+                    <p class="flow-text red-text text-darken-4">Tailed Beast Hunting</p>
+                    <p>The Akatsuki’s most significant service was capturing the Tailed Beasts (Bijuu) and their Jinchuriki. This was part of their plan to collect all nine beasts to create a powerful weapon for world domination.</p>
+                </div>
+                <div class="col s12" id="covert">
+                    <p class="flow-text red-text text-darken-4">Assassinations and Kidnappings</p>
+                    <p>Many members took on missions that involved eliminating targets, stealing valuable information, or kidnapping key individuals, especially from other villages.</p>
+                </div>
+                <div class="col s12" id="power">
+                    <p class="flow-text red-text text-darken-4">Manipulation and Control</p>
+                    <p>Under Pain’s leadership, the Akatsuki manipulated various political events and conflicts between nations to further their own objectives, often inciting wars or creating instability to weaken the current power structures.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+     <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/bg1.jpg" alt="" class="responsive-img">
+        </div>
+    </div>
+
+    <footer class="page-footer black">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5>About Akatsuki</h5>
+                    <p>The Akatsuki is a notorious criminal organization in the Naruto series, originally founded with the goal of bringing peace to the war-torn world. Led by Nagato (Pain) after Yahiko's death, it evolved into a ruthless group focused on capturing the Tailed Beasts to control the world through fear and power. Comprised of skilled rogue ninjas with dark pasts, the Akatsuki became a symbol of both destruction and ambition, leaving a lasting impact on the shinobi world. Their actions and conflicts are central to the series' narrative.</p>
+                </div>
+                <div class="col s12 l4 offset-l2">
+                    <h5>Connect</h5>
+                    <ul>
+                        <li><span><a href="https://www.facebook.com/username5453?mibextid=ZbWKwL" target="_blank" class="btn-floating btn-small red">
+                            <i class="fab fa-facebook"></i>
+                        </a></span> Facebook </li><br>
+                        <li><span><a href="https://youtube.com/@theamagiyt?si=17kRUl10LNlbw4kA" target="_blank" class="btn-floating btn-small red">
+                            <i class="fab fa-youtube"></i>
+                        </a></span> Youtube </li><br>
+                        <li><span><a href="https://www.instagram.com/akatsuki?igsh=MjB2bWpmcGx1d3g2" target="_blank" class="btn-floating btn-small red">
+                            <i class="fab fa-instagram"></i>
+                        </a></span> Instagram </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright dark red text-darken-4">
+            <div class="container center-align">&copy; 2024 Akatsuki.Org</div>
+        </div>
+    </footer>
+
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script>
+        $ (document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.collapsible').collapsible();
+            $('.dropdown-trigger').dropdown({
+                coverTrigger:false,
+                constrainWidth:false,
+                hover:true
+            })
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.carousel').carousel();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker({
+                disableWeekends: true
+            });
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+        });
+    </script>
+</body>
+</html>

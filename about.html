@@ -1,0 +1,278 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Akatsuki</title>
+    <style>
+        header{
+            background: url(img/b10.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 1000px;
+        }
+        .nav {
+            position: fixed;
+            z-index: 100;
+        }
+        .dropdown-content li a {
+            color: white;
+        }
+        .sidenav {
+            background-image: url(img/m1.jpg);
+            z-index: 1000;
+        }
+        .sidenav li a {
+            color: white;
+        }
+        .row p {
+            font-size: 18px;
+        }
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+        .tabs .indicator{
+            background-color: red;
+        }
+        .tabs .tab a:focus, .tabs .tab a:focus.active{
+            background: transparent;
+        }
+        @media screen and (max-width: 670px){
+            header {
+                min-height: 500px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+
+    <header>
+        <div class="navbar-fixed">
+            <nav class="nav-wrapper red">
+                <div class="container">
+                    <a href="https://naruto.fandom.com/wiki/Akatsuki" target="_blank" class="brand-logo">Akatsuki.Org</a>
+                    <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="index.html" class="dropdown-trigger" data-target="dropdown1">Home</a></li>
+                            <ul id="dropdown1" class="dropdown-content red">
+                                <li><a href="#member's">Member's</a></li>
+                                <li><a href="#objective">Objective's</a></li>
+                            </ul>
+                        <li><a href="about.html" class="dropdown-trigger" data-target="dropdown2">About</a></li>
+                            <ul id="dropdown2" class="dropdown-content red">
+                                <li><a href="#intro">Introduction</a></li>
+                                <li><a href="#history">History</a></li>
+                            </ul>
+                        <li><a href="highlight.html" class="dropdown-trigger" data-target="dropdown3">Highlight's</a></li>
+                            <ul id="dropdown3" class="dropdown-content red">
+                                <li><a href="#iconic">Iconic Member's</a></li>
+                                <li><a href="#epic">Epic Battle</a></li>
+                            </ul>
+                        <li><a href="trivia.html">Trivia</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>        
+        <div class="container">    
+            <ul class="sidenav center" id="mobile-menu">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                      <a href="#" class="collapsible-header">家</a>
+                      <div class="collapsible-body transparent">
+                        <ul>
+                           <li><a href="index.html">Home</a></li>
+                           <li><a href="#member's">Member's</a></li>
+                           <li><a href="#objective">Objective's</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                </ul>
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                      <a href="#" class="collapsible-header">について</a>
+                      <div class="collapsible-body transparent">
+                        <ul>
+                           <li><a href="about.html">About</a></li>
+                           <li><a href="#intro">Introduction</a></li>
+                           <li><a href="#history">History</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                </ul>        
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                      <a href="#" class="collapsible-header">ハイライト</a>
+                      <div class="collapsible-body transparent">
+                        <ul>
+                           <li><a href="highlight.html">Highlight's</a></li>
+                           <li><a href="#iconic">Iconic Member's</a></li>
+                           <li><a href="#epic">Epic Battle</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                </ul>
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                      <a href="#" class="collapsible-header">トリビア</a>
+                      <div class="collapsible-body transparent">
+                        <ul>
+                           <li><a href="trivia.html">Trivia</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                </ul>
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                      <a href="#" class="collapsible-header">接触</a>
+                      <div class="collapsible-body transparent">
+                        <ul>
+                           <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </header>
+
+    <section class="container section scrollspy" id="intro">
+        <div class="row">
+            <div class="col s12 l12">
+                <h2 class="red-text center text-darken-2">INTRODUCTION</h2><br><br>
+                <p>The Akatsuki, one of the most infamous and intriguing organizations in the Naruto series, stands as a symbol of power, ideology, and mystery. Originally formed in the Hidden Rain Village by Yahiko, Nagato, and Konan, the group began with noble intentions. Its founders envisioned a world where peace could be achieved through uniting people against the pain and devastation of war. The Akatsuki initially served as a symbol of hope for those in the war-torn Rain Village, advocating for justice and harmony.<br><br>
+
+                However, the organization’s trajectory took a darker turn after the death of Yahiko, the group’s charismatic leader. Manipulated by Hanzo of the Salamander and Danzo Shimura, Yahiko’s demise became a catalyst for Nagato, who assumed leadership and adopted the alias “Pain.” His ideals shifted dramatically, fueled by his disillusionment with humanity. Pain believed that true peace could only be achieved through fear, suffering, and domination, leading the Akatsuki down a more sinister path.<br><br>
+                    
+                Under Pain’s leadership, the Akatsuki was restructured into a mercenary organization, recruiting rogue ninja—S-rank criminals—from various villages. These individuals, each with exceptional abilities and dark pasts, included infamous names like Itachi Uchiha, Kisame Hoshigaki, Deidara, and Hidan. The group became a collection of the most dangerous and skilled shinobi, united by Pain’s vision and their own personal motives.<br><br>
+                    
+                The Akatsuki’s primary objective evolved into capturing the Tailed Beasts (Bijuu) and their hosts, the Jinchuriki, to fuel the power of the Gedo Statue. Pain intended to use this power to create a weapon capable of mass destruction, believing such a tool would force humanity into submission and prevent future wars. This goal placed the Akatsuki at odds with the shinobi villages, leading to some of the most intense and memorable confrontations in the series.<br><br>
+                    
+                Beyond their goals, the Akatsuki became known for their striking appearance and symbolism. Their black cloaks, adorned with red clouds, represented the bloodshed of their homeland. Each member wore a unique ring and operated in pairs, with their partnerships designed to balance contrasting abilities and personalities. Despite being a criminal organization, the Akatsuki’s operations were marked by discipline, strategy, and a chilling level of efficiency.<br><br>
+                    
+                As the series progressed, the Akatsuki became increasingly entangled in the overarching narrative, serving as both antagonists and tragic figures. While many members harbored their own motivations, betrayals and internal conflicts began to unravel the group. Notably, Itachi’s secret allegiance to Konoha and Obito’s (Tobi’s) manipulation of the Akatsuki revealed the layers of deception within the organization.<br><br>
+                    
+                Ultimately, the Akatsuki’s downfall culminated during the Fourth Great Ninja War, where their actions, driven by Obito and later Madara Uchiha, led to catastrophic consequences for the shinobi world. Despite their dissolution, the legacy of the Akatsuki endured, leaving a profound impact on the series’ characters and the world itself.<br><br>
+                    
+                The Akatsuki’s story is a tale of ambition, pain, and the pursuit of peace through extremes. Their presence in Naruto not only serves as a source of conflict but also provides a deeper exploration of themes like ideology, sacrifice, and the consequences of power. Through their compelling members and unforgettable battles, the Akatsuki remains one of the most captivating elements of the Naruto universe.</p>
+            </div>
+        </div>
+    </section>
+    
+  
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/b13.jpg" alt="" class="responsive-img">
+        </div>
+    </div>
+
+
+    <div class="container section scrollspy" id="history">
+        <div class="row">
+            <div class="col s6">
+                <h2 class="red-text text-darken-4">HISTORY</h2>
+                <p>The Akatsuki is a tragic and complex organization in the Naruto series, founded with noble intentions but ultimately corrupted. It began in the war-torn Hidden Rain Village, where Yahiko, along with Nagato and Konan, formed the group to bring peace through non-violent means. However, their idealism was shattered when Yahiko was killed due to betrayal by Hanzo of the Salamander and Danzo from Konoha. This event led Nagato, under the alias Pain, to take control and transform the Akatsuki into a militant group.
+                <br><br>
+                Under Pain's leadership, the Akatsuki evolved into a notorious criminal organization, recruiting rogue ninja with extraordinary abilities. Their stated goal was to capture the nine tailed beasts to create a superweapon and enforce peace through fear and dominance. However, the Akatsuki's larger mission was secretly manipulated by Obito Uchiha, who sought to use the tailed beasts for the Eye of the Moon Plan. This plan aimed to cast the Infinite Tsukuyomi, an illusion to enslave humanity and create a false utopia.
+                <br><br>
+                The Akatsuki’s downfall came during the Fourth Great Ninja War, where its members were systematically defeated by Naruto and his allies. Despite its eventual collapse, the Akatsuki’s story remains a poignant exploration of how noble ideals can be corrupted by power, manipulation, and despair.</p>
+            </div>
+            <br><br><br>
+            <div class="col s6 push-s1">
+                <ul class="tabs">
+                    <li class="tab col s6">
+                        <a href="#kill"class="red-text text-darken-4">Founding and Early Ideals</a>
+                    </li>
+                    <li class="tab col s6">
+                        <a href="#capture"class="red-text text-darken-4"> Criminal Rise</a>
+                    </li>
+                </ul>
+                <div class="col s12" id="kill">
+                    <p class="flow-text red-text text-darken-4">Formation and Noble Beginnings</p>
+                    <p>The Akatsuki’s origins lie in the war-ravaged Hidden Rain Village, a small nation often caught in the crossfire of larger shinobi conflicts. Yahiko, a passionate and charismatic leader, founded the Akatsuki alongside his closest friends, Nagato and Konan. Their goal was to bring peace to their homeland and the shinobi world through diplomacy and unification.<br><br>
+
+                    Initially, the group gained a reputation as a beacon of hope, recruiting like-minded individuals to work toward a future free from war. However, their ideals drew the attention of powerful figures like Hanzo of the Salamander, the Rain Village’s leader, and Danzo Shimura of the Hidden Leaf. These men perceived the Akatsuki as a threat to their power.<br><br>
+                        
+                    This tension culminated in a tragic betrayal when Hanzo, with Danzo’s assistance, ambushed the group. Yahiko sacrificed himself to save Nagato and Konan, leaving Nagato devastated. Fueled by grief and anger, Nagato awakened the true power of his Rinnegan and annihilated Hanzo’s forces, taking over the Rain Village. This event marked a turning point, transforming the Akatsuki from a movement of hope into an organization driven by darker ideologies under Nagato’s leadership.</p>
+                </div>
+                <div class="col s12" id="capture">
+                    <p class="flow-text red-text text-darken-4">Rise as a Criminal Organization</p>
+                    <p>Following Yahiko’s death, Nagato (now operating as Pain) redefined the Akatsuki’s goals. Believing that true peace could only be achieved through shared suffering and fear, he restructured the group into a mercenary organization with a grander, more sinister vision. The new Akatsuki sought to capture the nine Tailed Beasts to create a weapon of mass destruction, intending to force the world into submission and end all wars through overwhelming power.<br><br>
+
+                    To achieve this, the Akatsuki recruited a roster of notorious rogue ninja, each with unique abilities and tragic backstories. This lineup included figures like Itachi Uchiha, Kisame Hoshigaki, Deidara, and Hidan, among others. Operating in pairs, these S-rank criminals executed missions with ruthless efficiency, targeting Jinchuriki and furthering their goals.<br><br>
+                        
+                    The Akatsuki’s rise was marked by several high-profile successes, including the capture of multiple Tailed Beasts. However, their actions drew the ire of the shinobi world, eventually uniting the Five Great Nations against them. This shift in focus from an ideological movement to a feared criminal syndicate cemented the Akatsuki’s reputation as one of the most formidable threats in the Naruto series.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+     <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/bg1.jpg" alt="" class="responsive-img">
+        </div>
+    </div>
+    
+
+    <footer class="page-footer black">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5>About Akatsuki</h5>
+                    <p>The Akatsuki is a notorious criminal organization in the Naruto series, originally founded with the goal of bringing peace to the war-torn world. Led by Nagato (Pain) after Yahiko's death, it evolved into a ruthless group focused on capturing the Tailed Beasts to control the world through fear and power. Comprised of skilled rogue ninjas with dark pasts, the Akatsuki became a symbol of both destruction and ambition, leaving a lasting impact on the shinobi world. Their actions and conflicts are central to the series' narrative.</p>
+                </div>
+                <div class="col s12 l4 offset-l2">
+                    <h5>Connect</h5>
+                    <ul>
+                        <li><span><a href="https://www.facebook.com/username5453?mibextid=ZbWKwL" target="_blank" class="btn-floating btn-small red">
+                            <i class="fab fa-facebook"></i>
+                        </a></span> Facebook </li><br>
+                        <li><span><a href="https://youtube.com/@theamagiyt?si=17kRUl10LNlbw4kA" target="_blank" class="btn-floating btn-small red">
+                            <i class="fab fa-youtube"></i>
+                        </a></span> Youtube </li><br>
+                        <li><span><a href="https://www.instagram.com/akatsuki?igsh=MjB2bWpmcGx1d3g2" target="_blank" class="btn-floating btn-small red">
+                            <i class="fab fa-instagram"></i>
+                        </a></span> Instagram </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright dark red text-darken-4">
+            <div class="container center-align">&copy; 2024 Akatsuki.Org</div>
+        </div>
+    </footer>
+
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script>
+        $ (document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.collapsible').collapsible();
+            $('.dropdown-trigger').dropdown({
+                coverTrigger:false,
+                constrainWidth:false,
+                hover:true
+            })
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker({
+                disableWeekends: true
+            });
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+        });
+    </script>
+</body>
+</html>
